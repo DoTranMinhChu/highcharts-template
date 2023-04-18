@@ -84,11 +84,6 @@ export default function LineChart01() {
         const currentDate = now.getUTCDate();
         const startYear = currentYear - selected.durationYear!!
         const startMonth = currentMonth - selected.durationMonth!!
-        console.log({
-            currentYear,
-            currentMonth,
-            currentDate
-        })
         const startTime = Date.UTC(startYear, startMonth, currentDate);
         const endTime = Date.UTC(currentYear, currentMonth, currentDate);
 
